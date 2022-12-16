@@ -14,17 +14,6 @@ Quiz app that uses GraphQL to query and mutate data in the backend and Apollo Cl
 ### Backend
 * **Frameworks**: GraphQL, Node(Express), MongoDB
 
-## Features
-
-### Technical Features
-
-* Querying data with GraphQL that returns data from MongoDB.
-* Mutations with GraphQL to add data into database.
-* Fetching relevant data from graphql endpoint using queries with Apollo Client.
-* Static Site Generation (SSG) with NextJS to massively boost performance and SEO.
-* Quiz functionality developed with ES6 JavaScript and React Hooks.
-* Clean CSS and JavaScript code.
-
 ## Code Snippets
 
 ### GraphQL
@@ -98,3 +87,16 @@ export async function getStaticProps() {
   };
 }
 ```
+## Snapshots
+
+### Front Page
+<img width="1437" alt="Screenshot 2022-12-17 at 3 27 40 AM" src="https://user-images.githubusercontent.com/55578512/208196182-2e768948-6285-4a53-827f-f5e2eff83952.png">
+
+### If wrong answer is chosen
+<img width="1440" alt="Screenshot 2022-12-17 at 3 28 53 AM" src="https://user-images.githubusercontent.com/55578512/208196273-8fcee48e-0979-4ec0-ba68-9e190330cf83.png">
+
+### Fail
+<img width="1440" alt="Screenshot 2022-12-17 at 3 29 37 AM" src="https://user-images.githubusercontent.com/55578512/208196342-13e24cbe-ae87-4553-bcbc-67e68d1454a1.png">
+
+### Pass
+<img width="1440" alt="Screenshot 2022-12-17 at 3 30 09 AM" src="https://user-images.githubusercontent.com/55578512/208196379-a0160f4f-a6fb-4bec-9fd1-3dbb40a92f53.png">
