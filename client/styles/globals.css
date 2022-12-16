@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --black: #252a41;
+  --lightBlack: #2c415a;
+  --accent: #e68230;
+  --white: #ccdae8;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-bd {
+  font-weight: 700;
+}
+
+.text-lt {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: clamp(3.79rem, 4.18vw, 6.7rem);
+}
+
+h2 {
+  font-size: clamp(2.8rem, 2.31rem, 3.79rem);
+}
+
+p,
+a,
+button {
+  font-size: clamp(1.6rem, 1.31vw, 2.1rem);
+}
+button {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--lightBlack);
+  transition: 0.3s all linear;
+}
+
+.btn:hover {
+  color: var(--lightBlack);
+  background-color: var(--white);
+}
+
+.btn__accent {
+  background-color: var(--accent);
+}
+
+.btn__accent:hover {
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.question {
+  max-width: 90rem;
+}
+
+.question .btn {
+  margin-top: 2rem;
+  border: none;
+}
+
+.question__heading {
+  margin-bottom: 2rem;
+  font-size: clamp(2.8rem, 2.31rem, 3.79rem);
+}
+
+.question__answers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+}
+
+.question__answers button {
+  padding: 2rem;
+  border: none;
+  background-color: var(--lightBlack);
+  color: var(--white);
+  transition: 0.3s all linear;
+}
+
+.question__answers button:hover {
+  background-color: var(--accent);
+}
+
+/* .quiz .btn {
+  width: 30rem;
+  text-align: center;
+  margin-top: 2rem;
+  border: none;
+} */
+
+button.right {
+  background-color: rgb(39, 168, 89);
+}
+
+button.wrong {
+  background-color: rgb(128, 25, 25);
+}
+
+.wrong {
+  color: rgb(163, 61, 61);
+  font-size: 3rem;
+}
+
+.right {
+  color: rgb(39, 168, 89);
+}
+
+.results {
+  animation: 1s linear fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
